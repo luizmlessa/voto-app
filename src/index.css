@@ -5,14 +5,25 @@
   --font-sans: 'VT323', monospace;
 }
 
-body {
+/* Força o fundo escuro na tela inteira */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #09090b; /* Cor do zinc-950 */
+  color: #fafafa;
   font-family: 'VT323', monospace;
   letter-spacing: 0.5px;
   font-size: 1.1rem;
-  background-color: #0f1115;
+  min-height: 100vh;
 }
 
-/* Borda estilo 8-bit */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* O segredo da borda 8-bit */
 .pixel-border {
   border: 2px solid #3f3f46;
   box-shadow: 4px 4px 0px 0px #000;
